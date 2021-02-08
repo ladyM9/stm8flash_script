@@ -14,7 +14,7 @@ k = 0
 n = 0
 line = []
 # U listy polijepiš odgovor iz terminala, prvo u terminalu pokreneš Ispisivanje_serijskih_brojeva, dobiješ odgovor ( serijske brojeve i ovdje polijepiš)
-listy = ['59001800050000315037504e', '64005200050000315037504e', '58003200050000315037504e', '63004800050000315037504e', '640047001200005153484c4e']
+listy = ['640047001200005153484c4e', '64005200050000315037504e', '54000800040000315037504e', '63004800050000315037504e', '470032001100005153484c4e', '312f0d002c135737334d4e00', '59001800050000315037504e', '59001200050000315037504e', '58003200050000315037504e', '46002600020000315037504e']
 STLinkCount = len(listy)  # broj ST Linkova
 #timeutil.get_epochtime_ms()
 #Lista u koju se stavljaju odgovori od terminala od svih STLinkova
@@ -30,7 +30,7 @@ while x < STLinkCount:     # sve dok je index u polju pocevsi od 0 manji od zadn
 	outputStr[x] = subprocess.Popen(['sudo' , 'stm8flash','-c' , 'stlinkv2', '-p' , 'stm8s001j3' ,'-w', 'led_blink.hex', '-S' , listy[x].upper()], shell = False, stdout = subprocess.PIPE, stderr=subprocess.STDOUT)    # pozivanje popena, dakle pozivanje st linkova
 	#listy=su470032001100005153484c4ebprocess.Popen("pgrep -u root", stdout= subprocess.PIPE, shell = True)
 	x+=1
-	time.sleep(0.05)
+	time.sleep(0.05) # Kratki delay između slanja zbog hub-a 
 print('Programiranje je u tijeku...')
 
 if x == 0:
