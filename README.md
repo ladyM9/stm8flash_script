@@ -4,7 +4,7 @@ Programming multiple STM8S001J3 MCUs at once using multiple STLinks with Python3
 Project based on a Raspberry Pi 4 Computer (Model B) to upload programs to the STM8S001J3.
 It is possible to add more microcontrollers and ST-Links as needed.
 
-<sub>subscript</sub>Components for the project:
+<sub>Components for the project:</sub>
 - Raspberry Pi 4
 - STM8S001J3
 - ST-Link
@@ -13,7 +13,7 @@ It is possible to add more microcontrollers and ST-Links as needed.
 - Breadboard wires
 - Logic Level Converter
 
-#How to use it
+<sub>How to use it<sub>
 
 Each microcontroller is connected to an ST-Link, and then the ST-Link is plugged into the USB Hub. The USB Hub is connected to the Raspberry Pi via USB communication.
 LED diodes are used to signal whether the code has been successfully programmed. The LEDs need to be connected to the Raspberry Pi.
