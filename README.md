@@ -4,7 +4,7 @@ Programming multiple STM8S001J3 MCUs at once using multiple STLinks with Python3
 Project based on a Raspberry Pi 4 Computer (Model B) to upload programs to the STM8S001J3.
 It is possible to add more microcontrollers and ST-Links as needed.
 
-#Components for the project:
+<sub>subscript</sub>Components for the project:
 - Raspberry Pi 4
 - STM8S001J3
 - ST-Link
