@@ -5,14 +5,13 @@ Project based on a Raspberry Pi 4 Computer (Model B) to upload programs to the S
 It is possible to add more microcontrollers and ST-Links as needed.
 
 Components for the project:
-
--Raspberry Pi 4
--STM8S001J3
--ST-Link
--USB Hub (instead of "USB Dock")
--LED diodes
--Breadboard wires
--Logic level converter
+- Raspberry Pi 4
+- STM8S001J3
+- ST-Link
+- USB Hub
+- LED diodes
+- Breadboard wires
+- Logic Level Converter
 
 How to use it
 Each microcontroller is connected to an ST-Link, and then the ST-Link is plugged into the USB Hub. The USB Hub is connected to the Raspberry Pi via USB communication.
